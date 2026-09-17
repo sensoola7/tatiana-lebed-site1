@@ -10,17 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #2A2015;
-    --bg-alt: #1D140D;
-    --card: #3A2C1D;
-    --surface: #473726;
-    --ink: #F1E6D8;
-    --ink-soft: #B9AA9B;
+    --bg: #EDE4D3;
+    --bg-alt: #E4D7BE;
+    --card: #FBF6EC;
+    --surface: #F3ECDF;
+    --ink: #362B20;
+    --ink-soft: #6B5D4C;
     --rust: #C1613C;
-    --rust-deep: #E2895F;
+    --rust-deep: #A84E2E;
     --pine: #2D4F43;
-    --gold: #D8AE6C;
-    --line: rgba(241,230,216,0.14);
+    --gold: #A9793E;
+    --line: rgba(54,43,32,0.14);
     --radius: 4px;
     --wrap: 1120px;
 
@@ -72,7 +72,7 @@
   }
   .lede{font-size:18px; color:var(--ink-soft); max-width:640px; font-weight:300;}
   .lede-intro{
-    font-size:19px; color:#fff; font-weight:700; margin:0 0 6px; letter-spacing:.01em;
+    font-size:19px; color:var(--ink); font-weight:700; margin:0 0 6px; letter-spacing:.01em;
   }
 
   .cancel-note{
@@ -107,13 +107,13 @@
     flex-wrap:wrap; text-align:center;
   }
   .topbar-inner a{
-    color:#fff; text-decoration:none; font-weight:700; letter-spacing:.02em;
+    color:var(--ink); text-decoration:none; font-weight:700; letter-spacing:.02em;
     display:inline-flex; align-items:center; gap:7px;
   }
-  .topbar-inner a:hover{color:var(--gold);}
+  .topbar-inner a:hover{color:var(--rust-deep);}
   .topbar-inner svg{width:15px; height:15px; flex-shrink:0;}
-  .topbar-note{color:#C9BEB3; font-weight:400;}
-  .topbar-sep{color:#8A7F73; display:inline-block;}
+  .topbar-note{color:var(--ink-soft); font-weight:400;}
+  .topbar-sep{color:var(--ink-soft); display:inline-block;}
   @media (max-width:560px){
     .topbar-inner{gap:4px; padding:9px 0;}
     .topbar-sep{display:none;}
@@ -123,7 +123,7 @@
   /* ---------- HEADER ---------- */
   header{
     position:sticky; top:0; z-index:50;
-    background:rgba(21,16,12,0.94);
+    background:rgba(251,246,236,0.92);
     backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
@@ -181,7 +181,7 @@
   /* ---------- HERO ---------- */
   .hero{
     padding:56px 0 40px;
-    background:linear-gradient(135deg, #735F46 0%, #5B4C39 100%);
+    background:linear-gradient(135deg, #F6EEDF 0%, #E7D9BF 100%);
   }
   .hero-inner{
     display:grid;
@@ -380,7 +380,7 @@
   .record-col:first-child{border-left:none;}
   .record-col:nth-child(2){background:rgba(193,97,60,0.14);}
   .record-col:nth-child(3){background:rgba(216,174,108,0.12);}
-  .record-col:nth-child(4){background:rgba(38,68,58,0.45);}
+  .record-col:nth-child(4){background:rgba(45,79,67,0.14);}
   .record-label{
     font-size:12px; text-transform:uppercase; letter-spacing:.1em; font-weight:700;
     color:var(--ink-soft); margin-bottom:10px; display:block;
@@ -457,11 +457,11 @@
 
   /* ---------- CONTACT ---------- */
   .contact{background:var(--bg-alt); color:var(--ink);}
-  .contact h2{color:#fff;}
-  .contact .lede{color:#C9BEB3;}
+  .contact h2{color:var(--ink);}
+  .contact .lede{color:var(--ink-soft);}
   .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:40px;}
-  .contact-block h3{color:#fff; font-size:16px; margin-bottom:10px; font-family:'Raleway',sans-serif; font-weight:700;}
-  .contact-block a.phone-link{color:#EFE7DA; font-size:22px; font-weight:700; text-decoration:none; font-family:'Cormorant Garamond',serif;}
+  .contact-block h3{color:var(--ink); font-size:16px; margin-bottom:10px; font-family:'Raleway',sans-serif; font-weight:700;}
+  .contact-block a.phone-link{color:var(--ink); font-size:22px; font-weight:700; text-decoration:none; font-family:'Cormorant Garamond',serif;}
   .contact-block a.phone-link:hover{color:var(--gold);}
   .msg-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;}
   .msg-pill{
@@ -490,7 +490,7 @@
   .social-btn.instagram{background:linear-gradient(135deg, var(--instagram-1), var(--instagram-2), var(--instagram-3));}
   .social-btn.b17{background:var(--b17);}
 
-  .note{font-size:13.5px; color:#9C9086; margin-top:26px;}
+  .note{font-size:13.5px; color:var(--ink-soft); margin-top:26px;}
 
   /* ---------- REVIEWS ---------- */
   .reviews-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:40px;}
@@ -1133,7 +1133,7 @@
       </div>
       <div class="contact-block">
         <h3>Город</h3>
-        <p style="margin:0 0 20px; font-size:17px;">Минск, Беларусь<br><span style="color:#9C9086; font-size:14.5px;">очно и онлайн — по всему миру</span></p>
+        <p style="margin:0 0 20px; font-size:17px;">Минск, Беларусь<br><span style="color:var(--ink-soft); font-size:14.5px;">очно и онлайн — по всему миру</span></p>
         <h3>Соцсети и отзывы</h3>
         <div class="social-row">
           <a class="social-btn instagram" href="https://www.instagram.com/lebedtatia/" target="_blank" rel="noopener">
